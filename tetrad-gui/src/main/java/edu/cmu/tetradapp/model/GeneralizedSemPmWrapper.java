@@ -45,7 +45,7 @@ import java.util.Set;
  *
  * @author Joseph Ramsey
  */
-public class GeneralizedSemPmWrapper implements SessionModel, GraphSource, KnowledgeBoxInput {
+public class GeneralizedSemPmWrapper implements SessionModel/*, GraphSource*/, KnowledgeBoxInput {
     static final long serialVersionUID = 23L;
 
     /**

@@ -44,7 +44,7 @@ import java.util.List;
  *
  * @author Joseph Ramsey
  */
-public class DirichletBayesImWrapper implements SessionModel, GraphSource, KnowledgeBoxInput {
+public class DirichletBayesImWrapper implements SessionModel/*, GraphSource*/, KnowledgeBoxInput {
     static final long serialVersionUID = 23L;
 
     /**

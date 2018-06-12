@@ -43,7 +43,7 @@ import java.util.List;
  *
  * @author Joseph Ramsey
  */
-public class SemImWrapper implements SessionModel, GraphSource {
+public class SemImWrapper implements SessionModel/*, GraphSource*/ {
     static final long serialVersionUID = 23L;
     private List<SemIm> semIms;
 

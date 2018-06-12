@@ -46,7 +46,7 @@ import java.util.List;
 // @author Joseph Ramsey
 ///////////////////////////////////////////////////////////
 
-public class BayesImWrapperObs implements SessionModel, Memorable, GraphSource {
+public class BayesImWrapperObs implements SessionModel, Memorable/*, GraphSource*/ {
     static final long serialVersionUID = 23L;
 
     /**

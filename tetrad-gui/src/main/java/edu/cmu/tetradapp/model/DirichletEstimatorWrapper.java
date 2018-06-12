@@ -39,7 +39,7 @@ import java.io.ObjectInputStream;
  *
  * @author Joseph Ramsey
  */
-public class DirichletEstimatorWrapper implements SessionModel, GraphSource {
+public class DirichletEstimatorWrapper implements SessionModel/*, GraphSource*/ {
     static final long serialVersionUID = 23L;
 
     /**

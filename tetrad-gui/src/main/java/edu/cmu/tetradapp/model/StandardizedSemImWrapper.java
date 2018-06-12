@@ -41,7 +41,7 @@ import java.util.List;
  *
  * @author Joseph Ramsey
  */
-public class StandardizedSemImWrapper implements SessionModel, GraphSource, KnowledgeBoxInput {
+public class StandardizedSemImWrapper implements SessionModel/*, GraphSource*/, KnowledgeBoxInput {
     static final long serialVersionUID = 23L;
 
     /**

@@ -41,7 +41,7 @@ import java.io.ObjectInputStream;
  *
  * @author Joseph Ramsey
  */
-public class BayesEstimatorWrapper implements SessionModel, GraphSource {
+public class BayesEstimatorWrapper implements SessionModel/*, GraphSource*/ {
     static final long serialVersionUID = 23L;
 
     /**

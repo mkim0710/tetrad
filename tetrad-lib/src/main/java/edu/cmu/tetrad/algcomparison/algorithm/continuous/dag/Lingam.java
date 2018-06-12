@@ -1,6 +1,7 @@
 package edu.cmu.tetrad.algcomparison.algorithm.continuous.dag;
 
 import edu.cmu.tetrad.algcomparison.algorithm.Algorithm;
+import edu.cmu.tetrad.annotation.AlgType;
 import edu.cmu.tetrad.data.DataModel;
 import edu.cmu.tetrad.data.DataSet;
 import edu.cmu.tetrad.data.DataUtils;
@@ -18,6 +19,11 @@ import java.util.List;
  *
  * @author jdramsey
  */
+@edu.cmu.tetrad.annotation.Algorithm(
+        name = "LiNGAM",
+        command = "pc",
+        algoType = AlgType.forbid_latent_common_causes
+)
 /*@AlgorithmDescription(
         name = "LiNGAM",
         algType = AlgType.DAG,
@@ -30,6 +36,7 @@ public class Lingam implements Algorithm {
     public Graph search(DataModel dataSet, Parameters parameters) {
     	if (parameters.getInt("bootstrapSampleSize") < 1) {
             edu.cmu.tetrad.search.Lingam lingam = new edu.cmu.tetrad.search.Lingam();
+            lingam.setPenaltyDiscount(parameters.getDouble("penaltyDiscount"));
             return lingam.search(DataUtils.getContinuousDataSet(dataSet));
     	}else{
     		Lingam algorithm = new Lingam();
@@ -73,6 +80,7 @@ public class Lingam implements Algorithm {
     @Override
     public List<String> getParameters() {
     	List<String> parameters = new ArrayList<>();
+    	parameters.add("penaltyDiscount");
         // Bootstrapping
         parameters.add("bootstrapSampleSize");
         parameters.add("bootstrapEnsemble");
