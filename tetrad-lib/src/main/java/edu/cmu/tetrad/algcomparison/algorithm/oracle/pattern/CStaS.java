@@ -11,19 +11,18 @@ import edu.cmu.tetrad.graph.EdgeListGraph;
 import edu.cmu.tetrad.graph.Graph;
 import edu.cmu.tetrad.graph.Node;
 import edu.cmu.tetrad.util.Parameters;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-//@edu.cmu.tetrad.annotation.Algorithm(
-//        name = "CStaS",
-//        command = "cstas",
-//        algoType = AlgType.forbid_latent_common_causes,
+@edu.cmu.tetrad.annotation.Algorithm(
+        name = "CStaS",
+        command = "cstas",
+        algoType = AlgType.forbid_latent_common_causes
 //        description = "Performs a CStaS analysis of the given dataset (Stekhoven, Daniel J., et al. " +
 //                "Causal stability ranking.\" Bioinformatics 28.21 (2012): 2819-2823) and returns a graph " +
 //                "in which all selected variables are shown as into the target. The target is the first variables."
-//)
+)
 public class CStaS implements Algorithm, TakesIndependenceWrapper {
     static final long serialVersionUID = 23L;
     private IndependenceWrapper test;
